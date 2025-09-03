@@ -1,0 +1,182 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.wrapper {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 2.5vw 1vw;
+  height: 5vw;
+  transition: all 400ms ease;
+}
+.oWrapper.wrapper {
+  background-color: white;
+}
+.logoWrapper {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+.left,
+.right {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+}
+.left {
+  gap: 1vw;
+}
+.right {
+  gap: 1.4vw;
+}
+
+.logo {
+  width: 15vw;
+  cursor: pointer;
+}
+
+.link {
+  font-size: 1.4vw;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.hamWrapper {
+  height: 0.7vw;
+  width: 2.4vw;
+  position: relative;
+  cursor: pointer;
+
+  transition: all 300ms ease;
+}
+.hamLine {
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  height: 1px;
+  transition: all 300ms ease;
+}
+.topHam {
+  top: 0;
+  transition: all 300ms ease;
+}
+.botHam {
+  bottom: 0;
+  transition: all 300ms ease;
+}
+.hamWrapper.active .topHam {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.hamWrapper.active .botHam {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+.hamWrapper.active {
+  height: 1.7vw;
+}
+.icon {
+  font-size: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 480px) {
+}
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 640px) {
+  .hamWrapper {
+    height: 0.7vw;
+    width: 2.4vw;
+    margin-right: 7px;
+  }
+  .icon {
+    font-size: 2.4vw;
+  }
+  .right {
+    gap: 2.5vw;
+  }
+  .link {
+    font-size: 1.2vw;
+  }
+  .left {
+    gap: 1.8vw;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    padding: 2.5vw 2vw;
+  }
+  .icon {
+    font-size: 2vw;
+  }
+  .link {
+    font-size: 1.3vw;
+  }
+}
+
+/*(900px and up) */
+@media only screen and (min-width: 900px) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    padding: 2vw 2vw;
+  }
+  .right {
+    gap: 2vw;
+  }
+  .icon {
+    font-size: 1.7vw;
+  }
+  .link {
+    font-size: 1.2vw;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 1280px) {
+  .right {
+    gap: 2vw;
+  }
+  .icon {
+    font-size: 1.5vw;
+  }
+  .link {
+    font-size: 1vw;
+  }
+  .hamWrapper {
+    height: 0.7vw;
+    width: 2vw;
+    margin-right: 2px;
+  }
+
+  .logo {
+    width: 11vw;
+  }
+}
+
+/*  (1350px and up) */
+@media only screen and (min-width: 1440px) {
+}

@@ -1,0 +1,9 @@
+.link {
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 14px;
+  cursor: pointer;
+  font-size: 1vw;
+  text-transform: uppercase;
+}
