@@ -49,7 +49,7 @@ const Navbar = () => {
           <img src="/images/logo.svg" className={styles.logo} alt="" />
         </div>
       </div>
-      <Menubar />
+      {isOpen && <Menubar />}
     </nav>
   );
 };
